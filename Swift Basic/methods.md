@@ -56,7 +56,7 @@ struct Test {
 struct Test {
     var x = 0
     mutating func updateValueBy(num:Int) {
-        x = num // 錯誤
+        x = num
     }
 }
 ```

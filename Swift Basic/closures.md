@@ -70,7 +70,7 @@ var reversed = names.sort{ $0 > $1 }
 
 ## <a name='capturing_values'></a> 捕獲值(Capturing Values)
 
-Swift最簡單的閉包形式是[嵌套函式](chapter4.md#Nested_Functions)。嵌套函式可以捕獲其外部函式所有的參數以及定義的變數
+Swift最簡單的閉包形式是[嵌套函式](nested_types.md)。嵌套函式可以捕獲其外部函式所有的參數以及定義的變數
 ```swift
 func makeIncrementor(forIncrement amount: Int) -> () -> Int {
     var runningTotal = 0
@@ -100,7 +100,7 @@ addTen()
 ```
 
 >注意：<br>
-如果你將閉包賦值給一個類別實例的屬性，並且該閉包通過指向該實例或其成員來捕獲了該實例，你將創建一個在閉包和實例間的強參考環。(會導致記憶體洩漏memory leak)。更多資訊，請參考[閉包引起的迴圈強參考]()。
+如果你將閉包賦值給一個類別實例的屬性，並且該閉包通過指向該實例或其成員來捕獲了該實例，你將創建一個在閉包和實例間的強參考環。(會導致記憶體洩漏memory leak)。更多資訊，請參考[閉包引起的迴圈強參考](arc.md#strong_reference_cycles_for_closures)。
 
 函式與閉包都是參考型別，用下面例子作示範
 ```swift

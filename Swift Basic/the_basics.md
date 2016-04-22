@@ -192,9 +192,9 @@ if aBoy == nil {
 var aBoy: String? = "Andy"
 
 if let tempBoy = aBoy {
-    print("沒男孩")
-} else {
     print("有男孩，名字為\(tempBoy)")
+} else {
+    print("沒男孩")
 }
 
 // 輸出：有男孩，名字為Andy
@@ -209,7 +209,7 @@ if let temp1 = someOpt, temp2 = someOpt2, ... {
 ## <a name='error_handling'></a> 錯誤處理
 
 要使用錯誤處理，可在函式的後面加上關鍵字`throws`<br>
-(如果對函式不清楚的，可到XX章節先看函式`func`的介紹)
+(如果對函式不清楚的，可先到[函式](functions.md)的介紹了解)
 ```swift
 func getFullName(firstname:String, withLastName lastname:String) throws -> String {
     let fullName = firstname + "" + lastname
