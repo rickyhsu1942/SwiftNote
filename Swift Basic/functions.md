@@ -20,7 +20,7 @@ print("\(mathFunction(2,3))") // 輸出: 5
 <br>
 使用函式型別`(Int, Int) -> Int`作為另一個函式的參考型別
 ```swift
-func printMathResult(mathFunction:(Int, Int) -> Int, a: Int, b: Int) {
+func printMathResult(mathFunction:(Int, Int) -> Int, _ a: Int, _ b: Int) {
     print("\(mathFunction(a,b))")
 }
 
